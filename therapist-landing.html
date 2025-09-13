@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Landing Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #4CAF50; color: white; padding: 10px 0; text-align: center; }
+        .hero { background: url('hero-image.jpg') no-repeat center center; height: 400px; }
+        .services, .therapists, .booking, .testimonials, .contact { padding: 20px; }
+        .service, .therapist { border: 1px solid #ccc; margin: 10px; padding: 10px; }
+        footer { text-align: center; padding: 10px; background-color: #f1f1f1; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Therapy Center</h1>
+    </header>
+    <div class="hero"></div>
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service">Counseling</div>
+        <div class="service">Therapy</div>
+        <div class="service">Psychological Assessment</div>
+    </div>
+    <div class="therapists">
+        <h2>Meet Our Therapists</h2>
+        <div class="therapist">Dr. Jane Doe - Psychologist</div>
+        <div class="therapist">Dr. John Smith - Counselor</div>
+    </div>
+    <div class="booking">
+        <h2>Book an Appointment</h2>
+        <input type="date" id="appointment-date">
+        <button onclick="bookAppointment()">Book Now</button>
+    </div>
+    <div class="testimonials">
+        <h2>Testimonials</h2>
+        <p>"This therapy center changed my life!" - Client A</p>
+    </div>
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Therapy Center</p>
+    </footer>
+    <script>
+        function bookAppointment() {
+            const date = document.getElementById('appointment-date').value;
+            alert('Appointment booked for ' + date);
+        }
+    </script>
+</body>
+</html>
